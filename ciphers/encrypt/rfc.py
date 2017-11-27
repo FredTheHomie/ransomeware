@@ -1,5 +1,5 @@
-def RFCencrypt(file):
-        rail = [''] * 2
+def RFCencrypt(key, file):
+        rail = [''] * key
         layer = 0
         for char in file: # For-loop for each character from the string
             rail[layer] += char # Creates the "Fence", in which the "diagonal" characters are placed.

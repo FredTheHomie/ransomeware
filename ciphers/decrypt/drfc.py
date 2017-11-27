@@ -1,9 +1,9 @@
 # Importing function from the utilities file
 from util.utils import offset
 
-def DecryptRailsFenceCipher(encrypted):
+def DecryptRailsFenceCipher(key, encrypted):
     showOff = 0
-    array = [[' ' for col in range(len(encrypted))] for row in range(2)] # Gets the columns and rows of the "Fence"
+    array = [[' ' for col in range(len(encrypted))] for row in range(key)] # Gets the columns and rows of the "Fence"
     read = 0
 
     for rail in range(2): # Will get the order of the words in which they appear on in the fence, and order them back to their orginal locations

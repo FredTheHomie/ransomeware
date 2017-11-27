@@ -4,8 +4,7 @@ from util.utils import (SYMBOLS,
                         cryptomath,
                         checkKeys)
 
-def decryptMessage(message):
-     key = 97
+def decryptMessage(key, message):
      keyA, keyB = getKeyParts(key) # Takes the key value and splits it into 2 keys
      checkKeys(keyA, keyB, 'decrypt') # Checks that the key values are correct
      plaintext = ''

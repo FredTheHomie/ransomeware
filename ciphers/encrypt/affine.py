@@ -2,8 +2,7 @@
 from util.utils import (SYMBOLS,
                         getKeyParts)
 
-def encryptMessage(message):
-    key = 97
+def encryptMessage(key, message):
     keyA, keyB = getKeyParts(key) # Splits the keys into 2 different keys
     ciphertext = ''
     for symbol in message:
