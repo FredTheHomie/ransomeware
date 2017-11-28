@@ -1,4 +1,4 @@
-import sys, cryptomath, random
+import sys, cryptomath, random, uuid
 
 SYMBOLS = """ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\] ^_`abcdefghijklmnopqrstuvwxyz{|}~"""
 file = '/Users/Fred/Desktop/projects/ransomeware/file/main.js'
@@ -39,3 +39,6 @@ def checkKeys(keyA, keyB, mode):
          sys.exit('Key A must be greater than 0 and Key B must be between 0 and %s.' % (len(SYMBOLS) - 1))
      if cryptomath.gcd(keyA, len(SYMBOLS)) != 1:
          sys.exit('Key A (%s) and the symbol set size (%s) are not relatively prime. Choose a different key.' % (keyA, len(SYMBOLS)))
+
+def getUID():
+    return uuid.UUID(int=uuid.getnode())
