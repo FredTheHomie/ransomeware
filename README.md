@@ -1,4 +1,4 @@
-# Ransomeware !WARNING - DO NOT RUN THIS PROGRAM - YES, IT WORKS!
+#!WARNING - DO NOT RUN THIS PROGRAM - YES, IT WORKS!
 
 This ransomeware will work on any OS, it will recursively go through and encrypt all of the files that can be encrypted. The encryption algorthm utilises the Affine, Null, and Rails Fence Cipher. The product cipher is executed three times.
 
